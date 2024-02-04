@@ -1,7 +1,7 @@
 import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
-import Input from "../Input /Input"; 
+import Input from "../Input/Input"; 
 import "./LoginForm.scss";
 
 const LoginForm = () => {

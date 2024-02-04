@@ -1,0 +1,48 @@
+@use "../../styles/partials/resets";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typograph" as *;
+#root .ql-container {
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  background: #121212;
+  color: $primary-text;
+}
+
+#root .ql-snow.ql-toolbar {
+  margin-top: 0.5rem;
+  display: block;
+  background: #1c1c1c;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+#root .ql-editor {
+  min-height: 18em;
+  background: #121212;
+  color: $primary-text;
+
+  ::selection {
+    background: #fffc00;
+  }
+}
+
+.dark-mode {
+  #root .ql-container {
+    background: #121212;
+    color: $primary-text;
+  }
+
+  #root .ql-snow.ql-toolbar {
+    background: #1c1c1c;
+  }
+
+  #root .ql-editor {
+    background: #121212;
+    color: $primary-text;
+
+    ::selection {
+      background: #fffc00;
+      color: #000;
+    }
+  }
+}

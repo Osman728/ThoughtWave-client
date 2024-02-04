@@ -72,6 +72,6 @@ const SinglePost = () => {
     </div>
   );
   
-};
+}
 
 export default SinglePost;

@@ -1,0 +1,75 @@
+@use "../../styles/partials/resets";
+
+@use "../../styles/partials/variables" as *;
+
+.Profile {
+  background-color: $primary-bg;
+  color: $primary-text;
+
+  &__header {
+    padding: 1rem;
+    border-bottom: 1px solid $primary-border;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    &-logout {
+      background-color: $primary-button;
+      color: $primary-text;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 0.25rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $primary-button-hover;
+      }
+    }
+  }
+
+  &__content {
+    padding: 2rem;
+  }
+
+  &__avatar-container {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+
+    &__avatar {
+      border-radius: 50%;
+      width: 6.25rem;
+      height: 6.25rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    &-label {
+      margin-bottom: 0.5rem;
+      color: $secondary-label;
+    }
+
+    &-input {
+      margin-bottom: 1rem;
+      border: 1px solid $primary-border;
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      font-size: inherit;
+      color: $primary-text;
+      background-color: $primary-bg;
+
+      &:focus {
+        outline: none;
+        border-color: $primary-button;
+      }
+    }
+  }
+}

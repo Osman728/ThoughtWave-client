@@ -1,4 +1,4 @@
-import Input from "../Input /Input";
+import Input from "../Input/Input"; 
 import "./SignupForm.scss";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
