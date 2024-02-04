@@ -1,0 +1,58 @@
+@use "../../styles/partials/resets";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typograph" as *;
+.post {
+  background-color: $primary-bg;
+  color: $primary-text;
+  padding: 1.25rem;
+  width: 100%;
+
+  &__title {
+    font-size: 1.125rem;
+    color: $primary-text;
+  }
+
+  &__image-container {
+    margin-top: 1rem;
+  }
+    &__image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.25rem;
+    }
+ 
+
+  &__author {
+    margin-top: 1rem;
+
+    &-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+      &-image {
+        border-radius: 50%;
+        width: 1.875rem;
+        height: 1.875rem;
+        margin-right: 0.625rem;
+      }
+
+
+    &-name {
+      font-size: 0.875rem;
+      color: $secondary-text;
+    }
+  }
+
+  &__category {
+    font-size: 1rem;
+    color: $primary-button;
+  }
+
+  &__content {
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: $primary-text;
+  }
+}

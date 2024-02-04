@@ -1,0 +1,10 @@
+import React from 'react'
+import SignupForm from "../../component/SignupForm/SignupForm";
+
+const  Signup = () => {
+  return (
+    <div>< SignupForm/></div>
+  )
+}
+
+export default  Signup

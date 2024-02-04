@@ -1,0 +1,54 @@
+@use "../../styles/partials/resets";
+@use "../../styles/partials/typograph" as *;
+@use "../../styles/partials/variables" as *;
+
+.signup {
+  background-color: $primary-bg;
+  color: $primary-text;
+
+  &__form {
+    padding: 1.25rem;
+    background-color: $primary-form-bg;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    &-title {
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    &-button {
+        width: 100%;
+      text-decoration: none;
+      color: $primary-text;
+      background-color: $primary-button;
+      padding: 0.625rem 1rem;
+      border: none;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      font-size: 1rem;
+
+      &:hover {
+        background-color: $primary-button-hover;
+      }
+    }
+
+    &-error {
+      color: $primary-error-text;
+      margin-top: 0.625rem;
+    }
+
+    &-login {
+      color: $secondary-text;
+      margin-top: 1.25rem;
+    }
+
+    &-link {
+      color: $primary-button;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
