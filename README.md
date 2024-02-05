@@ -47,6 +47,10 @@ Responsive Design:
 - React Quill
 - MySql
 - Multer
+- npm install react-router-dom react-quilljs quill-blot-formatter quill quill-image-uploader react-icons axios sass
+
+
+
 
 ### APIs
 
